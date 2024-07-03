@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.calculatorDisplay {
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    border: solid 5px;
+    background: #ddd;
+    padding-left: 10px; padding-right: 10px;
+}
+
+.calculatorKeys { 
+    display: grid;
+    width: 500px; height: 500px;
+    grid-column: 25%;
+    border: solid 5px;
+}
+
+.keyOperatorA, .keyOperatorS, .keyOperatorM, .keyOperatorD {
+    grid-row: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    border: solid 2px;
+    background: #aaa;
+}
+
+.keyNumber7, .keyNumber8, .keyNumber9 {
+    grid-row: 2;
+    font-size: 2rem;
+    border: solid 2px;
+    font-weight: bold;
+}
+
+.keyNumber4, .keyNumber5, .keyNumber6 {
+    grid-row: 3;
+    font-size: 2rem;
+    border: solid 2px;
+    font-weight: bold;
+}
+
+.keyNumber1, .keyNumber2, .keyNumber3 {
+    grid-row: 4;
+    font-size: 2rem;
+    border: solid 2px;
+    font-weight: bold;
+}
+
+.keyNumber0, .keyDecimal, .keyClear {
+    grid-row: 5;
+    font-size: 2rem;
+    border: solid 2px;
+    font-weight: bold;
+}
+
+.keyDecimal, .keyClear {
+    background: #aaa;
+}
+.keyEqual {
+    grid-row: 2 / span 4;
+    font-size: 2rem;
+    font-weight: bold;
+    border: solid 2px;
+    background: #ff7e00;
+    font-weight: bold;
+}

@@ -1,3 +1,12 @@
+/**
+ * Code originally based on: "How to build an HTML calculator app from scratch using JavaScript"
+ * https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98
+ * 
+ * Changes made by me:
+ * - Modulo operator
+ * - CSS stylesheet
+ */
+
 const calculator = document.querySelector('.calculator')
 const keys = calculator.querySelector('.calculatorKeys')
 const display = document.querySelector('.calculatorDisplay')
@@ -10,6 +19,7 @@ const calculate = (n1, operator, n2) => {
     else if (operator === 'subtract') return firstNum - secondNum
     else if (operator === 'multiply') return firstNum * secondNum
     else if (operator === 'divide') return firstNum / secondNum
+    else if (operator === 'modulo') return firstNum % secondNum
 }
 
 const getKeyType = (key) => {
@@ -19,7 +29,8 @@ const getKeyType = (key) => {
         action === 'add' ||
         action === 'subtract' ||
         action === 'multiply' ||
-        action === 'divide'
+        action === 'divide' ||
+        action === 'modulo'
     ) return 'operator'
     return action
 }

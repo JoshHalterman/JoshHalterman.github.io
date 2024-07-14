@@ -1,0 +1,47 @@
+#entrySubmit, #sort_Options, #displayEntries {
+    display: grid;
+    display: flex; 
+    justify-content: center;
+    padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#primaryTextBox, #primaryDateBox, #submit_Entry, #sort_Options_1, #sort_Options_2, #sort_Options_3, #sort_Options_4 {
+    margin: 0 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+th {
+    background-color: blanchedalmond;
+}
+
+td > input, #entrySubmit > input, td > button, #entrySubmit > button, #sort_Options > button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td > button, #entrySubmit > button, #sort_Options > button {
+    border-radius: 10px;
+}
+
+#hideRows {
+    background-color: white;
+    border: none;
+    width: 1%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#inputRow > input {
+    text-align: center;
+}

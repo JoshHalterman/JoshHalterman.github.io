@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To-Do App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css-styles/style1.css">
+    </head>
+    <body>
+        <div class="entryList">
+            <div id="entrySubmit">
+                <input type="text" id="primaryTextBox" placeholder="What needs to be done?">
+
+                Complete By: 
+                <input type="date" id="primaryDateBox">
+
+                <button id="submit_Entry">Add to List</button>
+            </div>
+            <div id="sort_Options" class="sortingOptions">
+                <button id="sort_Options_1">Sort By Entry (A-Z)</button>
+                <button id="sort_Options_2">Sort By Entry (Z-A)</button>
+                <button id="sort_Options_3">Sort By Date (Most Urgent)</button>
+                <button id="sort_Options_4">Sort By Date (Least Urgent)</button>
+            </div>
+        </div>
+
+        <div class="todoList">
+            <div id="displayEntries">
+            </div>
+        </div>
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>

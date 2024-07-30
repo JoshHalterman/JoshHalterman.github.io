@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weight Tracker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css-styles/style1.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="entryFields">
+            <div id="enterWeight">Enter Recorded Weight (in pounds) <input type="number" id="weightEntryBox" placeholder="0.0" value="0" autocomplete="off"></div>
+            <div id="enterDate">Enter Date of Recording Weight <input type="date" id="dateEntryBox" autocomplete="off"></div>
+            <div id="enterHeight">Enter Height for BMI calculation (in inches) <input type="number" id="heightEntryBox" autocomplete="off"></div>
+            <div><input type="button" id="fileAdder" value="Add to Data" onclick="gatherEnteredData()"></div>
+            <div><input type="button" id="fileDownloader" value="Download" onclick="downloadJSON()"></div>
+            <div><input type="file" id="fileLoader" onchange="loadJSON()" autocomplete="off"></div>
+        </div>
+
+        <div id="displayGraphs">
+            <canvas id="weightGraph"></canvas>
+
+            <div id="weightLossTips">
+                <p>Tips for Losing Weight</p>
+                <p>- The Mayo Clinic suggests aiming for losing around 1-2 pounds (0.5 to 1 kilogram) a week.</p>
+                <p>- While the typical healthy BMI range is somewhere between 18.5 and 24.9, there are many reasons why that might not be the best option for you (including genetics, medications, and more). The BMI tracker is simply provided as an additional source of tracking information about your weight loss.</p>
+                <p>- Set specific, measurable, attainable, realistic and timely goals for your weight loss. "Excercise more" isn't a good goal, but "I will walk 15 minutes, 3 days a week for the first week" is much better.</p>
+                <p>- Make sure to measure your weight at the same time every day. (If you're weighing yourself weekly, weigh yourself on the same day each week as well)</p>
+            </div>
+        </div>
+
+        <script src="main.js" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </body>
+</html>

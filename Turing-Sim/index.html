@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css-styles/style1.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="column1">
+                <table id="InstructionsTable"> <p id="title">Instructions</p>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>State A</th>
+                            <th>State B</th>
+                            <th>State C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td id="select1">
+                                <select name="writeSymbol1" id="writeSymbol1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                                <select name="moveDirection1" id="moveDirection1">
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                </select>
+                                <select name="stateChange1" id="stateChange1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                            <td id="select2">
+                                <select name="writeSymbol2" id="writeSymbol2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                                <select name="moveDirection2" id="moveDirection2">
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                </select>
+                                <select name="stateChange2" id="stateChange2">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                            <td id="select3">
+                                <select name="writeSymbol3" id="writeSymbol3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                                <select name="moveDirection3" id="moveDirection3">
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                </select>
+                                <select name="stateChange3" id="stateChange3">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="select4">
+                                <select name="writeSymbol4" id="writeSymbol4">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                                <select name="moveDirection4" id="moveDirection4">
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                </select>
+                                <select name="stateChange4" id="stateChange4">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                            <td id="select5">
+                                <select name="writeSymbol5" id="writeSymbol5">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                                <select name="moveDirection5" id="moveDirection5">
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                </select>
+                                <select name="stateChange5" id="stateChange5">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                            <td id="select6">
+                                <select name="writeSymbol6" id="writeSymbol6">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                                <select name="moveDirection6" id="moveDirection6">
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                </select>
+                                <select name="stateChange6" id="stateChange6">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <p id="RunningInstruction"><br></p>
+                    <p id="NextInstruction"><br></p>
+                </div>
+
+                <p id="title">Operations</p>
+
+                <button onclick="loadInstructions()">Load Instructions</button>
+                <button onclick="loadPreset(0)">Preset 1</button>
+                <button onclick="loadPreset(1)">Preset 2</button>
+                <button onclick="if(!halted){readInstruction()}">Step</button>
+                <button onclick="resetTape()">Reset Sim</button>
+
+                <br><br>
+            
+                <div id="results"></div>
+            </div>
+
+            <div class="column2">
+                <div id="sidebar">
+                    <p id="title">Description</p>
+                    <p>This is a simulator designed to allow you to see how a Turing machine works. You can write your own instructions, or use one of the preset buttons to automatically load a set of instructions.</p>
+                    <p>For further details, follow this link: <br><a href="https://en.wikipedia.org/wiki/Turing_machine">https://en.wikipedia.org/wiki/Turing_machine</a>
+                    <p>Once you've created your instructions, click the Load button to load your instructions into the machine. Then, click the Step button to step through your instructions one by one.</p>
+                    
+                    <p id="title">How to Write Instructions</p>
+                    <p>This Turning machine simulator supports 6 instructions, based on the machine state and current symbol.</p>
+                    <p>Each instruction consists of 3 parts: 
+                        the symbol that will be written (either a <b><u>0</u></b> or a <b><u>1</u></b>), 
+                        the direction the tape will move (either <b><u>L</u></b>eft or <b><u>R</u></b>ight), 
+                        and the new state the machine will change to. (either state <b><u>A</u></b>, state <b><u>B</u></b>, state <b><u>C</u></b>, or the <b><u>H</u></b>alt state, which ends the program)</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js" async defer></script>
+    </body>
+</html>

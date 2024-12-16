@@ -1,0 +1,38 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+option, select, button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.column1 {
+    flex: 75%;
+}
+
+.column2 {
+    flex: 40%;
+    padding-right: 5%;
+}
+
+#title {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+}

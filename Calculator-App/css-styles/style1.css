@@ -73,6 +73,13 @@ body {
     font-weight: bold;
 }
 
+.backToPortfolio {
+    grid-row: 6;
+    font-size: 2rem;
+    border: solid 2px;
+    font-weight: bold;
+}
+
 .keyDecimal, .keyClear {
     background: #aaa;
 }

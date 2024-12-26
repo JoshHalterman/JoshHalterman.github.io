@@ -12,6 +12,10 @@ body {
     vertical-align: middle;
 }
 
+.calculator {
+    padding-bottom: 5%;
+}
+
 .calculatorDisplay {
     font-size: 4rem;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;

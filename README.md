@@ -1,12 +1,9 @@
-# Joshua-Halterman.github.io
-A collection of projects demonstrating my coding experience and capabilities.
-
 <html>
   <head>
     <title>My GitHub Pages Site</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
+    <h1>Joshua-Halterman.github.io</h1>
+    <p>A collection of projects demonstrating my coding experience and capabilities.</p>
   </body>
 </html>

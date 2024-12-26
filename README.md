@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>My GitHub Pages Site</title>

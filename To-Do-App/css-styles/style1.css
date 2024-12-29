@@ -12,6 +12,7 @@
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 #primaryTextBox, #primaryDateBox, #submit_Entry, #sort_Options_1, #sort_Options_2, #sort_Options_3, #sort_Options_4 {

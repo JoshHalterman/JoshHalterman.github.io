@@ -2,6 +2,16 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.backToPortfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-decoration: none;
+}
+
 option, select, button {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -20,6 +30,7 @@ td {
     display: flex;
     text-align: center;
     padding-top: 5%;
+    padding-bottom: 2%;
 }
 
 .column1 {

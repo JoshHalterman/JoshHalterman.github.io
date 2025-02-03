@@ -21,9 +21,14 @@ body {
     padding-right: 1%;
 }
 
+#centered {
+    text-align: center;
+}
+
 #linkList {
     border-left: 5px solid black;
     background-color: lightgrey;
+    padding: 1%;
 }
 
 #skillList {
